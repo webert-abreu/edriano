@@ -18,88 +18,6 @@ export default function Home() {
       <div className="w-full max-w-[480px] px-5 py-12 pb-8 relative z-10 flex flex-col gap-6">
         
 
-        {/* Biography & Legacy Section - Styled like Lucas Card */}
-        <div className="relative animate-fade-in-up delay-100 flex flex-col gap-3">
-          <div className="relative w-full rounded-[24px] overflow-hidden bg-gradient-to-b from-[#1a110a] to-[#0d0d0d] border border-[#c77a16]/30 shadow-[0_10px_40px_rgba(199,122,22,0.15)]">
-            
-            {/* Background Image of Edriano */}
-            <div className="absolute right-[-25%] bottom-0 w-[125%] h-[100%] opacity-100 z-0 pointer-events-none">
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/30 to-transparent z-10"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d] via-[#0d0d0d]/40 to-transparent z-10"></div>
-              <Image src="/WhatsApp Image 2026-06-25 at 19.12.41 (2).jpeg" alt="Edriano Bittencourt" fill className="object-cover object-top" />
-            </div>
-
-            <div className="relative z-10 p-7 flex flex-col min-h-[460px]">
-              
-              {/* Top Label */}
-              <p className="text-[#c77a16] text-[9px] font-black tracking-widest uppercase mb-4 drop-shadow-md">
-                MINHA HISTÓRIA • 40 ANOS DE MARCENARIA
-              </p>
-
-              {/* Big Bold Title */}
-              <h2 className="text-[32px] font-black uppercase leading-[1.05] mb-5 tracking-tight text-white font-sans drop-shadow-lg">
-                CONSTRUA <br />
-                <span className="text-[#c77a16]">O SEU</span> <br />
-                <span className="text-[#c77a16]">LEGADO</span>
-              </h2>
-              
-              {/* Short text paragraphs */}
-              <div className="text-neutral-200 text-[12px] leading-relaxed max-w-[75%] flex flex-col gap-3 font-medium mb-6 drop-shadow-md">
-                <p>
-                  Você pode ser um bom marceneiro... mas se não construir um legado, seu trabalho será apenas madeira.
-                </p>
-                <p>
-                  Aqui você conhece a história de quem vive o ofício há mais de 4 décadas e aprende que &quot;o maior penhor que você pode deixar a um filho é o legado&quot;.
-                </p>
-              </div>
-
-              {/* Pills / Checks */}
-              <div className="flex flex-col gap-2.5 mb-8 mt-auto">
-                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
-                  <span className="text-[#c77a16] text-[10px]">✓</span>
-                  <span className="text-white text-[10px] font-bold tracking-wide">+40 Anos de Experiência</span>
-                </div>
-                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
-                  <span className="text-[#c77a16] text-[10px]">✓</span>
-                  <span className="text-white text-[10px] font-bold tracking-wide">Marceneiro e Mentor</span>
-                </div>
-                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
-                  <span className="text-[#c77a16] text-[10px]">✓</span>
-                  <span className="text-white text-[10px] font-bold tracking-wide">Resultados Comprovados</span>
-                </div>
-              </div>
-
-              {/* Bottom CTA Button */}
-              <button onClick={() => setShowBio(!showBio)} className="bg-gradient-to-r from-[#c77a16] to-[#e2a836] text-[#0d0d0d] font-black uppercase text-[11px] tracking-wide py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-fit hover:scale-105 transition-transform shadow-[0_0_20px_rgba(199,122,22,0.4)] active:scale-95">
-                {showBio ? "FECHAR HISTÓRIA ↑" : "LER HISTÓRIA COMPLETA ➔"}
-              </button>
-              
-            </div>
-          </div>
-
-          {/* Expanded Full Biography */}
-          {showBio && (
-            <div className="bg-[#111] border border-white/5 rounded-3xl p-6 flex flex-col gap-4 shadow-xl animate-fade-in-up">
-              <h3 className="text-[#c77a16] text-xl font-serif italic leading-tight">Uma vida construída sobre fé, família e legado</h3>
-              
-              <div className="text-neutral-400 text-[13px] leading-relaxed flex flex-col gap-3">
-                <p><strong className="text-neutral-200">A marcenaria não foi uma profissão que escolhi. Foi um legado que recebi, uma missão que abracei e um propósito que decidi viver.</strong></p>
-                <p>Meu nome é <strong className="text-[#c77a16]">Edriano Bittencourt</strong>. Há mais de quatro décadas a madeira faz parte da minha vida. São mais de 40 anos como carpinteiro e 25 anos como marceneiro, mas a minha história não começou em uma marcenaria. Ela começou dentro de casa.</p>
-                <p>Meu pai foi meu primeiro mestre. Ensinou que o caráter vale mais do que qualquer ferramenta, que a palavra de um homem tem valor e que todo trabalho feito com excelência honra a Deus.</p>
-                <p>Minha mãe despertou em mim o espírito empreendedor. Com ela aprendi que é possível transformar dificuldades em oportunidades.</p>
-                <p>Sou casado e pai de uma filha. Tudo o que construo tem um propósito maior: honrar a Deus, honrar meus pais e deixar para minha filha um exemplo que permaneça por gerações.</p>
-                <p>Minha missão hoje vai muito além da marcenaria. Quero formar profissionais melhores, empresários mais preparados e líderes mais humanos.</p>
-              </div>
-
-              <div className="mt-4 p-5 border border-[#c77a16]/30 bg-gradient-to-br from-[#c77a16]/10 to-[#0d0d0d] rounded-2xl relative overflow-hidden group">
-                <p className="text-white font-serif italic text-lg leading-relaxed text-center relative z-10">
-                  &quot;O maior penhor que você pode deixar a um filho é o legado.&quot;
-                </p>
-              </div>
-            </div>
-          )}
-        </div>
-
         {/* Podcast Section */}
         <div className="bg-[#111] border border-white/5 rounded-3xl flex flex-col overflow-hidden animate-fade-in-up delay-300 shadow-xl mt-2">
           <div className="p-4 flex flex-col gap-3 border-b border-white/5 bg-[#161616]">
@@ -297,6 +215,88 @@ export default function Home() {
           </div>
         </a>
         
+        {/* Biography & Legacy Section - Styled like Lucas Card */}
+        <div className="relative animate-fade-in-up delay-100 flex flex-col gap-3">
+          <div className="relative w-full rounded-[24px] overflow-hidden bg-gradient-to-b from-[#1a110a] to-[#0d0d0d] border border-[#c77a16]/30 shadow-[0_10px_40px_rgba(199,122,22,0.15)]">
+            
+            {/* Background Image of Edriano */}
+            <div className="absolute right-[-25%] bottom-0 w-[125%] h-[100%] opacity-100 z-0 pointer-events-none">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/30 to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d0d] via-[#0d0d0d]/40 to-transparent z-10"></div>
+              <Image src="/WhatsApp Image 2026-06-25 at 19.12.41 (2).jpeg" alt="Edriano Bittencourt" fill className="object-cover object-top" />
+            </div>
+
+            <div className="relative z-10 p-7 flex flex-col min-h-[460px]">
+              
+              {/* Top Label */}
+              <p className="text-[#c77a16] text-[9px] font-black tracking-widest uppercase mb-4 drop-shadow-md">
+                MINHA HISTÓRIA • 40 ANOS DE MARCENARIA
+              </p>
+
+              {/* Big Bold Title */}
+              <h2 className="text-[32px] font-black uppercase leading-[1.05] mb-5 tracking-tight text-white font-sans drop-shadow-lg">
+                CONSTRUA <br />
+                <span className="text-[#c77a16]">O SEU</span> <br />
+                <span className="text-[#c77a16]">LEGADO</span>
+              </h2>
+              
+              {/* Short text paragraphs */}
+              <div className="text-neutral-200 text-[12px] leading-relaxed max-w-[75%] flex flex-col gap-3 font-medium mb-6 drop-shadow-md">
+                <p>
+                  Você pode ser um bom marceneiro... mas se não construir um legado, seu trabalho será apenas madeira.
+                </p>
+                <p>
+                  Aqui você conhece a história de quem vive o ofício há mais de 4 décadas e aprende que &quot;o maior penhor que você pode deixar a um filho é o legado&quot;.
+                </p>
+              </div>
+
+              {/* Pills / Checks */}
+              <div className="flex flex-col gap-2.5 mb-8 mt-auto">
+                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
+                  <span className="text-[#c77a16] text-[10px]">✓</span>
+                  <span className="text-white text-[10px] font-bold tracking-wide">+40 Anos de Experiência</span>
+                </div>
+                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
+                  <span className="text-[#c77a16] text-[10px]">✓</span>
+                  <span className="text-white text-[10px] font-bold tracking-wide">Marceneiro e Mentor</span>
+                </div>
+                <div className="flex items-center gap-2 bg-[#1a110a]/80 border border-[#c77a16]/30 rounded-full px-3 py-1.5 w-fit backdrop-blur-md">
+                  <span className="text-[#c77a16] text-[10px]">✓</span>
+                  <span className="text-white text-[10px] font-bold tracking-wide">Resultados Comprovados</span>
+                </div>
+              </div>
+
+              {/* Bottom CTA Button */}
+              <button onClick={() => setShowBio(!showBio)} className="bg-gradient-to-r from-[#c77a16] to-[#e2a836] text-[#0d0d0d] font-black uppercase text-[11px] tracking-wide py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 w-fit hover:scale-105 transition-transform shadow-[0_0_20px_rgba(199,122,22,0.4)] active:scale-95">
+                {showBio ? "FECHAR HISTÓRIA ↑" : "LER HISTÓRIA COMPLETA ➔"}
+              </button>
+              
+            </div>
+          </div>
+
+          {/* Expanded Full Biography */}
+          {showBio && (
+            <div className="bg-[#111] border border-white/5 rounded-3xl p-6 flex flex-col gap-4 shadow-xl animate-fade-in-up">
+              <h3 className="text-[#c77a16] text-xl font-serif italic leading-tight">Uma vida construída sobre fé, família e legado</h3>
+              
+              <div className="text-neutral-400 text-[13px] leading-relaxed flex flex-col gap-3">
+                <p><strong className="text-neutral-200">A marcenaria não foi uma profissão que escolhi. Foi um legado que recebi, uma missão que abracei e um propósito que decidi viver.</strong></p>
+                <p>Meu nome é <strong className="text-[#c77a16]">Edriano Bittencourt</strong>. Há mais de quatro décadas a madeira faz parte da minha vida. São mais de 40 anos como carpinteiro e 25 anos como marceneiro, mas a minha história não começou em uma marcenaria. Ela começou dentro de casa.</p>
+                <p>Meu pai foi meu primeiro mestre. Ensinou que o caráter vale mais do que qualquer ferramenta, que a palavra de um homem tem valor e que todo trabalho feito com excelência honra a Deus.</p>
+                <p>Minha mãe despertou em mim o espírito empreendedor. Com ela aprendi que é possível transformar dificuldades em oportunidades.</p>
+                <p>Sou casado e pai de uma filha. Tudo o que construo tem um propósito maior: honrar a Deus, honrar meus pais e deixar para minha filha um exemplo que permaneça por gerações.</p>
+                <p>Minha missão hoje vai muito além da marcenaria. Quero formar profissionais melhores, empresários mais preparados e líderes mais humanos.</p>
+              </div>
+
+              <div className="mt-4 p-5 border border-[#c77a16]/30 bg-gradient-to-br from-[#c77a16]/10 to-[#0d0d0d] rounded-2xl relative overflow-hidden group">
+                <p className="text-white font-serif italic text-lg leading-relaxed text-center relative z-10">
+                  &quot;O maior penhor que você pode deixar a um filho é o legado.&quot;
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Action Button - WhatsApp */}
         <div className="w-full animate-fade-in-up delay-1000 mt-2">
           <a href="https://wa.me/5547999695575" target="_blank" rel="noopener noreferrer" className="w-full rounded-2xl bg-[#1a1a1a]/80 backdrop-blur hover:bg-[#25D366] transition-colors py-4 px-4 flex items-center justify-center gap-3 group border border-[#c77a16]/30 hover:border-[#25D366] shadow-[0_5px_20px_rgba(37,211,102,0.15)]">
