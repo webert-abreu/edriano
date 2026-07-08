@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
-import { FaYoutube, FaInstagram, FaWhatsapp, FaArrowRight, FaUsers, FaLaptop, FaHammer, FaCalendarAlt, FaChevronRight, FaShoppingCart } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaWhatsapp, FaArrowRight, FaUsers, FaLaptop, FaHammer, FaCalendarAlt, FaChevronRight, FaShoppingCart, FaSpinner } from "react-icons/fa";
 
 export default function Home() {
   const [showBio, setShowBio] = useState(false);
@@ -232,11 +232,14 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/50 to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
               <div className="flex flex-col items-start pr-4">
-                <span className="px-3 py-1 bg-white/10 backdrop-blur-md text-[9px] font-black tracking-widest uppercase text-white border border-white/10 rounded-full mb-2">Evento Exclusivo</span>
+                <span className="px-3 py-1 bg-white/10 backdrop-blur-md text-[9px] font-black tracking-widest uppercase text-white border border-white/10 rounded-full mb-2 flex items-center gap-2">
+                  <FaSpinner className="animate-spin text-[#4de782]" />
+                  Em Outubro
+                </span>
                 <h3 className="font-bold text-white text-3xl font-serif italic tracking-wide leading-tight">Imersão Presencial</h3>
                 <p className="text-neutral-300 text-[11px] mt-2 max-w-[95%] leading-relaxed">Viva a experiência completa. Aprenda na prática os segredos de quem construiu um legado na marcenaria. Garanta sua vaga no próximo evento.</p>
               </div>
-              <div className="w-12 h-12 rounded-full bg-[#1a1a1a]/80 flex items-center justify-center backdrop-blur-sm group-hover:bg-[#4de782] transition-colors shrink-0 border border-white/10">
+              <div className="w-12 h-12 rounded-full bg-[#4de782] flex items-center justify-center backdrop-blur-sm group-hover:scale-110 shadow-[0_0_20px_rgba(77,231,130,0.4)] transition-all shrink-0">
                 <FaCalendarAlt className="text-white text-lg" />
               </div>
             </div>
