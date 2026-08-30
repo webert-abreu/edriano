@@ -223,6 +223,8 @@ export default function Home() {
               </div>
             </div>
           </a>
+        </div>
+
         {/* Biography & Legacy Section - Styled like Lucas Card */}
         <div className="relative animate-fade-in-up delay-600 flex flex-col gap-3">
           <div className="relative w-full rounded-[24px] overflow-hidden bg-gradient-to-b from-[#1a110a] to-[#0d0d0d] border border-[#c77a16]/30 shadow-[0_10px_40px_rgba(199,122,22,0.15)]">
