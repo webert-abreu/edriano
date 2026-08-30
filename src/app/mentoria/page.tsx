@@ -204,7 +204,7 @@ export default function MentoriaLanding() {
     setOpenModule(openModule === index ? null : index);
   };
 
-  const ctaLink = "https://chat.whatsapp.com/C8CiQWBbNg9Cs9hrMGwDnV"; // Grupo VIP (Ou Checkout)
+  const ctaLink = "https://pay.hotmart.com/S107087265E"; // Checkout Hotmart
 
   return (
     <main className="min-h-screen font-sans bg-[#0d0d0d] text-neutral-100 overflow-x-hidden selection:bg-[#c77a16] selection:text-white">
@@ -230,8 +230,7 @@ export default function MentoriaLanding() {
           <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="mt-8 relative group w-full sm:w-auto">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#c77a16] to-[#e2a836] rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <button className="relative w-full sm:w-auto px-8 py-5 bg-gradient-to-br from-[#1a110a] to-[#0a0a0a] border border-[#c77a16]/50 rounded-xl text-[#e2a836] font-black uppercase tracking-widest text-sm sm:text-base shadow-2xl flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all">
-              Garantir Minha Vaga
-              <FaWhatsapp className="text-xl text-[#25D366]" />
+              Quero Viver de Marcenaria
             </button>
           </a>
         </div>
@@ -344,6 +343,60 @@ export default function MentoriaLanding() {
         </div>
       </section>
 
+      {/* --- OFFER / PRICING SECTION --- */}
+      <section className="relative z-10 w-full px-5 py-24 bg-[#111] border-t border-white/5">
+        <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row gap-12 items-center justify-center">
+          
+          <div className="w-full max-w-[450px] bg-gradient-to-b from-[#1a110a] to-[#0d0d0d] rounded-3xl p-8 sm:p-10 border border-[#c77a16]/30 shadow-[0_20px_50px_rgba(199,122,22,0.15)] flex flex-col items-center text-center relative overflow-hidden group">
+            
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-[100px] bg-[#c77a16]/30 blur-[60px] pointer-events-none"></div>
+
+            <span className="text-[#c77a16] text-[10px] sm:text-xs font-black tracking-[0.2em] uppercase mb-4 relative z-10">
+              Formação Completa
+            </span>
+            <h3 className="text-3xl font-black uppercase text-white mb-6 relative z-10">
+              Mentoria <br/>Viver de Marcenaria
+            </h3>
+
+            <div className="flex flex-col gap-3 text-left w-full mb-8 relative z-10">
+              <div className="flex items-start gap-3">
+                <FaCheckCircle className="text-[#c77a16] mt-1 shrink-0" />
+                <span className="text-neutral-300 text-sm">Acesso completo e irrestrito às 11 Aulas exclusivas</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <FaCheckCircle className="text-[#c77a16] mt-1 shrink-0" />
+                <span className="text-neutral-300 text-sm">O mapa definitivo de marceneiro a empresário de sucesso</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <FaCheckCircle className="text-[#c77a16] mt-1 shrink-0" />
+                <span className="text-neutral-300 text-sm">Do financeiro, processos e montagem até as vendas</span>
+              </div>
+            </div>
+
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+
+            <div className="flex flex-col items-center gap-2 mb-8 relative z-10">
+              <span className="text-[#c77a16] font-bold uppercase tracking-widest text-sm mb-1 animate-pulse">Inscrições Abertas</span>
+              <p className="text-neutral-400 text-center text-sm leading-relaxed px-4">
+                Clique no botão abaixo para garantir sua vaga e conferir as condições especiais de pagamento diretamente no checkout.
+              </p>
+            </div>
+
+            <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="w-full relative group/btn z-10">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#c77a16] to-[#e2a836] rounded-xl blur opacity-50 group-hover/btn:opacity-100 transition duration-500 animate-pulse"></div>
+              <button className="relative w-full py-5 bg-[#0d0d0d] border border-[#c77a16] rounded-xl text-[#e2a836] font-black uppercase tracking-widest text-sm shadow-2xl flex items-center justify-center hover:scale-[1.02] active:scale-[0.98] transition-all">
+                Quero Comprar Agora
+              </button>
+            </a>
+            
+            <p className="text-neutral-500 text-xs mt-5 flex items-center justify-center gap-2 relative z-10">
+              <FaCheckCircle /> Compra 100% segura e garantida (Hotmart)
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       {/* --- FINAL CTA SECTION --- */}
       <section className="relative z-10 w-full px-5 py-24 bg-gradient-to-t from-[#111] to-[#0d0d0d] border-t border-[#c77a16]/10 text-center">
          <div className="max-w-[700px] mx-auto flex flex-col items-center gap-8">
@@ -357,8 +410,7 @@ export default function MentoriaLanding() {
             <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="mt-4 relative group w-full sm:w-auto">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#c77a16] to-[#e2a836] rounded-2xl blur opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
               <button className="relative w-full sm:w-auto px-10 py-6 bg-[#0d0d0d] border border-[#c77a16] rounded-2xl text-[#e2a836] font-black uppercase tracking-[0.15em] text-sm sm:text-lg shadow-2xl flex items-center justify-center gap-4 hover:scale-[1.03] active:scale-[0.97] transition-all">
-                Garantir Minha Vaga
-                <FaWhatsapp className="text-2xl text-[#25D366]" />
+                Garantir Minha Vaga Agora
               </button>
             </a>
          </div>
